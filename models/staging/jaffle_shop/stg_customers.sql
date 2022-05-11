@@ -3,6 +3,6 @@ select
     first_name,
     last_name
 
-from dbt-tutorial.jaffle_shop.customers
+from {{ source('jaffle_shop', 'customers') }} order by customer_id
 /* Changed the statement from raw.jaffle_shop.customers to dbt-tutorial.jaffle_shop.customers
 Since the project raw is not enables in BigQuery*/
