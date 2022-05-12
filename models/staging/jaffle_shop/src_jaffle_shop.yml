@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    description: the name of the business database being worked
+    description: the name of the application business database
     database: dbt-tutorial
     schema: jaffle_shop
     tables:
@@ -19,7 +19,7 @@ sources:
         description: Raw orders data.
         columns:
           - name: id
-            decription: Primary key for customers.
+            decription: Primary key for orders data.
             tests:
               - unique
               - not_null
