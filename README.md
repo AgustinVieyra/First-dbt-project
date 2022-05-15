@@ -1,4 +1,4 @@
-The purpose of this project is transforming the raw data from a SQL database to be used to gather BI (Business Inteligence) insights for as e-commerce store know as jaffle shop.
+The purpose of this project is transforming the raw data from a SQL database to be used to gather BI (Business Intelligence) insights for as e-commerce store know as Jaffle Shop.
 
 This was made in a series of modular queries done in the DBT developing environment (saved as the Model Branch), and then put to deployment (gathered in this same repository as the Main Branch).
 This data is going to be used for a further BI examination using Chartio, Looker or Tableau (still a pending decision).
