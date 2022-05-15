@@ -2,8 +2,11 @@ The purpose of this project is transforming the raw data from a SQL database to 
 
 This was made in a series of modular queries done in the DBT developing environment (saved as the Model Branch), and then put to deployment (gathered in this same repository as the Main Branch).
 This data is going to be used for a further BI examination using Chartio, Looker or Tableau (still a pending decision).
+The database was stored in BigQuery.
 
-The project comes with its own documentation made with help of dbt. It consists of three related folders relating the info of the customers, orders and payments.
+The project comes with its own documentation made with help of dbt.
+
+The code consists of three v tables relating the info of customers, orders and payments. And then displayed on the marts/dim_customers.sql file.
 
 ### Resources to know more about dbt:
 - Learn more in the [docs](https://docs.getdbt.com/docs/introduction)
