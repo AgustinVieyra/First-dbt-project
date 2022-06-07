@@ -3,5 +3,5 @@
 {%- endmacro %}
 
 /*Currently used this macro in:
-    stg_payments.sql
+    models/staging/stripe/stg_payments.sql
 */
