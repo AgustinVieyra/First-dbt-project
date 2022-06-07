@@ -11,7 +11,8 @@ final as (
 
        sum(case when payment_method = '{{ payment_method }}' then amount else 0 end)
             as {{ payment_method }}_amount
-
+       
+       /*Adding the comma except in the last item in the list of payment_methods*/
        {%- if not loop.last -%}
          ,
        {% endif -%}
