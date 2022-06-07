@@ -4,8 +4,9 @@ select
     paymentmethod as payment_method,
     status,
 
-    -- amount is stored in cents, convert it to dollars
-    amount / 100 as amount,
+    -- the macro cents_to_dollars gets the name of the column, with the number of digits it is rounded to
+    {{ cents_to_dollars('amount', 4) }} as amount,
+        -- Note: Since Jinja is a template language, we pass 'amount' as a string to use it for the SQL once it is compiled.
     created as created_at
 
 from {{ source('stripe', 'payment') }}
